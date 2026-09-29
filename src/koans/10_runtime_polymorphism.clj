@@ -16,7 +16,7 @@
 
 (meditations
   "Some functions can be used in different ways - with no arguments"
-  (= __ (hello))
+  (= "HellO World!" (hello))
 
   "With one argument"
   (= __ (hello "world"))
