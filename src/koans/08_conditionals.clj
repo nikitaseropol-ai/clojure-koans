@@ -10,7 +10,7 @@
 
 (meditations
   "You will face many decisions"
-  (= a (if (false? (= 4 5))
+  (= :a (if (false? (= 4 5))
           :a
           :b))
 
@@ -25,7 +25,7 @@
   "In others your alternative may be interesting"
   (= :glory (if (not (empty? ()))
               :doom
-              glory))
+              :glory))
 
   "You may have a multitude of possible paths"
   (let [x 5]
@@ -40,8 +40,8 @@
 
   "In case of emergency, go fast"
   (= "pretty fast"
-     (explain-exercise-velocity bicycling))
+     (explain-exercise-velocity :bicycling))
 
   "But admit it when you don't know what to do"
-  (= is that even exercise?
+  (= "is that even exercise?"
      (explain-exercise-velocity :watching-tv)))
