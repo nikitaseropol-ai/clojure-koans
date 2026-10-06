@@ -3,10 +3,10 @@
 
 (meditations
   "There are many ways to generate a sequence"
-  (= [1 2 3 4 5] (range 1 5))
+  (= [1 2 3 4 5] (range 1 6))
 
   "The range starts at the beginning by default"
-  (= [0 1 2 3 4 5] (range 5))
+  (= [0 1 2 3 4 5] (range 6))
 
   "Only take what you need when the sequence is large"
   (= [0 1 2 3 4 5 6 7 8 9]
@@ -17,7 +17,7 @@
      (drop 95 (range 100)))
 
   "Iteration provides an infinite lazy sequence"
-  (= [1 2 4 8 16 32 64 128]  (take 8 (iterate (fn [x] (* x 2)) 1)))
+  (= [1 2 4 8 16 32 64 128] (take 8 (iterate (fn [x] (* x 2)) 1)))
 
   "Repetition is key"
   (= [:a :a :a :a :a :a :a :a :a :a]
@@ -25,4 +25,4 @@
 
   "Iteration can be used for repetition"
   (= (repeat 100 "hello")
-     (take 100 (iterate identily "hello"))))
+     (take 100 (iterate identity "hello"))))
