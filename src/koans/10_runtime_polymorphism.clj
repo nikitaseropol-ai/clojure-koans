@@ -16,10 +16,10 @@
 
 (meditations
   "Some functions can be used in different ways - with no arguments"
-  (= "HellO World!" (hello))
+  (= "Hello World!" (hello))
 
   "With one argument"
-  (= "Hello, you silly world" (hello "world"))
+  (= "Hello, you silly world." (hello "world"))
 
   "Or with many arguments"
   (= "Hello to this group: Peter, Paul, Mary!"
